@@ -481,7 +481,7 @@ footer {
   }
 
   .services {
-    min-height: 200vh;
+    min-height: auto;
   }
 
   #contact-info {
@@ -510,7 +510,7 @@ footer {
   }
 
   .services {
-    min-height: 200vh;
+    min-height: auto;
   }
 
   #contact-info h2 {
