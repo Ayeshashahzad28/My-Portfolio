@@ -1,4 +1,3 @@
-/* ---------------------- General Reset ---------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +14,6 @@ body {
   background: #f5f5f5;
   color: #333;
 }
-
-
 
 /* Header & Navigation */
 header {
@@ -39,7 +36,7 @@ nav .logo {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 20px ;
+  margin: 20px;
 }
 
 nav ul {
@@ -85,8 +82,7 @@ section {
   scroll-margin-top: 90px;
 }
 
-
-/* ---------------------- Hamburger Menu ---------------------- */
+/*  Hamburger Menu  */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -121,7 +117,7 @@ section {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ---------------------- Hero / About Bio ---------------------- */
+/* Hero / About Bio  */
 .section#about {
   display: flex;
   flex-wrap: wrap;
@@ -157,12 +153,16 @@ section {
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------------------- About Me Section ---------------------- */
+/* About Me Section */
 .about {
   padding: 80px 50px;
   background-color: #111;
   color: #ccc;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about h2 {
@@ -182,12 +182,17 @@ section {
   margin: auto;
 }
 
-/* ---------------------- Services Section ---------------------- */
+/* Services Section */
 .services {
   padding: 100px 50px;
   background: #fff;
   color: #111;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .services h2 {
@@ -229,9 +234,9 @@ section {
   line-height: 1.5;
 }
 
-/* ---------------------- Projects Section ---------------------- */
+/*  Projects Section */
 .projects {
-    padding: 20px;
+  padding: 25px;
 }
 
 .projects-container {
@@ -239,6 +244,11 @@ section {
   background-color: #111;
   color: #ccc;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .projects-cont {
@@ -290,12 +300,17 @@ section {
   background: #ff5670;
 }
 
-/* ---------------------- Resume Section ---------------------- */
+/*  Resume Section */
 #resume {
   background: #fff;
   color: #111;
   padding: 100px 50px;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #resume h2 {
@@ -303,11 +318,8 @@ section {
   margin-bottom: 20px;
 }
 
-#resume .btn {
-  margin-top: 20px;
-}
 
-/* ---------------------- Buttons ---------------------- */
+/* Buttons */
 .btn,
 button {
   background: #ff6b81;
@@ -324,12 +336,63 @@ button:hover {
   background: #ff5670;
 }
 
-/* ---------------------- Contact Form ---------------------- */
-#contact {
+/* CONTACT INFO & SOCIALS  */
+#social-info {
   padding: 100px 50px;
-  background-color: #111;
+  background-color: #222;
   color: #ccc;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+#social-info h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.social-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.social-details p {
+  color: #eee;
+}
+
+.social-details a {
+
+  color: white;
+
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-details a:hover {
+  color: #ff5670;
+  transform: translateY(-2px);
+}
+
+.social-details p strong {
+  color: #ff5670 ;
+}
+
+
+/* Contact Form */
+#contact {
+  padding: 100px 50px;
+  color: #111;
+  background-color:white;
+  text-align: center;
+  height: 100vh;
 }
 
 #contact h2 {
@@ -367,11 +430,11 @@ button {
   cursor: pointer;
 }
 
-/* ---------------------- Footer ---------------------- */
+/* Footer  */
 footer {
   text-align: center;
   padding: 18px 0;
-  background: #111;
+  background-color: #111;
   color: #fff;
 }
 
@@ -400,7 +463,7 @@ footer {
     margin: 0;
     z-index: 2;
   }
-  
+
   nav ul.show {
     display: flex;
   }
@@ -409,12 +472,20 @@ footer {
     display: flex;
   }
 
-   #about-1,  
+  #about-1,
   #skills,
   #projects,
   #resume,
   #contact {
     scroll-margin-top: 90px;
+  }
+
+  .services {
+    min-height: 200vh;
+  }
+
+  #contact-info {
+    padding: 80px 20px;
   }
 }
 
@@ -430,11 +501,24 @@ footer {
     width: 100%;
   }
 
-  #about-1,  
+  #about-1,
   #skills,
   #projects,
   #resume,
   #contact {
     scroll-margin-top: 90px;
+  }
+
+  .services {
+    min-height: 200vh;
+  }
+
+  #contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-details {
+    font-size: 1rem;
+    gap: 10px;
   }
 }
