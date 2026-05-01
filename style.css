@@ -11,19 +11,20 @@ html {
 
 body {
   line-height: 1.7;
-  background: #f5f5f5;
+  background: #1a1a1a;
   color: #333;
 }
 
 /* Header & Navigation */
 header {
-  background: #111;
-  color: #fff;
+  /* background: #0b1320; */
+  background: linear-gradient(135deg, #142850, #0b1320);
+  color: #ffffff;
   padding: 18px 60px;
   position: sticky;
   top: 0;
   z-index: 1;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -49,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   position: relative;
   padding-bottom: 5px;
   text-decoration: none;
@@ -65,7 +66,7 @@ nav ul li a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #ff6b81;
+  background: #d4af37;
   transition: width 0.3s ease;
 }
 
@@ -74,7 +75,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: #ff6b81;
+  color: #d4af37;
 }
 
 /* section */
@@ -95,13 +96,13 @@ section {
 .hamburger span {
   height: 3px;
   width: 28px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 4px;
   transition: all 0.35s ease;
 }
 
 .hamburger:hover span {
-  background: #ff6b81;
+  background: #d4af37;
 }
 
 /* Active Hamburger */
@@ -124,7 +125,7 @@ section {
   justify-content: space-around;
   align-items: center;
   padding: 120px 60px;
-  background: #fff;
+  background: #ffffff;
   gap: 40px;
 }
 
@@ -142,12 +143,10 @@ h2::after {
   content: "";
   width: 60px;
   height: 3px;
-  background: #ff6b81;
+  background: #d4af37;
   display: block;
   margin: 10px auto;
 }
-
-
 
 .about-bio p {
   color: #555;
@@ -156,18 +155,11 @@ h2::after {
   line-height: 1.6;
 }
 
-.hero-image img {
-  max-width: 275px;
-  max-height: 275px;
-  border-radius: 18px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
-}
-
 /* About Me Section */
 .about {
   padding: 80px 50px;
-  background-color: #111;
-  color: #ccc;
+  background-color: #0b1320;
+  color: #eaeaea;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -195,8 +187,8 @@ h2::after {
 /* Services Section */
 .services {
   padding: 100px 50px;
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -218,12 +210,13 @@ h2::after {
 }
 
 .service-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-top: 3px solid #142850;
   padding: 30px 20px;
   border-radius: 15px;
   width: 280px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -251,8 +244,8 @@ h2::after {
 
 .projects-container {
   padding: 100px 50px;
-  background-color: #111;
-  color: #ccc;
+  background: #0b1320;
+  color: #ffffff;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -269,9 +262,11 @@ h2::after {
 }
 
 .project-card {
-  background: #fff;
+  background: #ffffff;
+  color: #111111;
   padding: 25px 20px;
   border-radius: 18px;
+  border-top: 3px solid #d4af37;
   width: 280px;
   text-align: center;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
@@ -299,21 +294,22 @@ h2::after {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 16px;
-  background: #ff6b81;
-  color: #fff;
+  background: #142850;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
 }
 
-.project-card a:hover a {
-  background: #ff5670;
+.project-card a:hover {
+  background-color: #d4af37;
+  color: #111111;
 }
 
 /*  Resume Section */
 #resume {
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
   padding: 100px 50px;
   text-align: center;
   min-height: 100vh;
@@ -328,29 +324,30 @@ h2::after {
   margin-bottom: 20px;
 }
 
-
 /* Buttons */
 .btn,
 button {
-  background: #ff6b81;
-  color: #fff;
+  background: linear-gradient(135deg, #142850, #0b1320);
+  color: #ffffff;
   padding: 12px 30px;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
   transition: background 0.3s ease;
+  transition: 0.4s;
 }
 
 .btn:hover,
 button:hover {
-  background: #ff5670;
+  background: linear-gradient(135deg, #d4af37, #b8912f);
+  color: #0b1320;
 }
 
 /* CONTACT INFO & SOCIALS  */
 #social-info {
   padding: 100px 50px;
-  background-color: #222;
-  color: #ccc;
+  background-color: #0b1320;
+  color: #eeeeee;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -375,32 +372,31 @@ button:hover {
 }
 
 .social-details p {
-  color: #eee;
+  color: #eeeeee;
 }
 
 .social-details a {
-
-  color: white;
-
+  color: #d4af37;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .social-details a:hover {
-  color: #ff5670;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 .social-details p strong {
-  color: #ff5670 ;
+  color: #ffffff;
 }
-
 
 /* Contact Form */
 #contact {
   padding: 100px 50px;
-  color: #111;
-  background-color:white;
+  color: #111111;
+  background-color: #ffffff;
   text-align: center;
   min-height: 100vh;
 }
@@ -422,10 +418,10 @@ textarea {
   outline: none;
   padding: 14px;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   font-size: 1rem;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
 }
 
 input:focus,
@@ -444,8 +440,9 @@ button {
 footer {
   text-align: center;
   padding: 18px 0;
-  background-color: #111;
-  color: #fff;
+  background: linear-gradient(135deg, #142850, #0b1320);
+
+  color: #ffffff;
 }
 
 /* responsive */
@@ -462,7 +459,7 @@ footer {
 
   nav ul {
     flex-direction: column;
-    background: #111;
+    background: linear-gradient(135deg, #142850, #0b1320);
     position: absolute;
     top: 100%;
     left: 0;
